@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: runner_file.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 473.057 s <<< FAILURE! - in runner_file.TestRunner
+Invoice Posting - TC01(Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment)  Time elapsed: 44.483 s  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+
+The following assertion failed:
+1) expected:<"?660114.8[9]"> but was:<"?660114.8[7]">
+
+
+Transactions Validations under Finance Module with Payment ID- TC01(Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment)  Time elapsed: 42.954 s  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+
+The following 2 assertions failed:
+1) expected:<"?660114.8[9]"> but was:<"?660114.8[7]">
+2) expected:<"?660114.8[9]"> but was:<"?660114.8[7]">
+
+

@@ -1,0 +1,22 @@
+1 >> Open the command prompt and cd until the project root directory.
+
+2 >> First, let’s run all the Cucumber Scenarios from the command prompt. Since it’s a Maven project and we have added Cucumber in test scope dependency and all features are also added in src/test packages, 
+run the following command in the command prompt: mvn test
+
+3 >> If you need help on these Cucumber options, then enter the following command 
+in the command prompt and look at the output: mvn test -Dcucumber.options=”–help”
+Note :This gives you the list of parameters that can be passed through command line using CucumberOptions.
+
+4 >> If we want to run single Scenario from the cmd, this is how we specify : mvn test -Dcucumber.options=”feature file path” + “line number of the scenario”
+Note: In the preceding code, “5” is the Feature file line number where a Scenario starts.
+
+5 >> If you want to run the test cases associated to Tags, this is how we specify : mvn test -Dcucumber.options=”–tags @tag Name”
+
+6 >> If you want to generate a different report or if you wish to change the report path. This how you do it: mvn test -Dcucumber.options=”–plugin junit:target/cucumber-reports/report.xml”.
+
+7 >> If you want cucumber to run just a single feature file or multiple feature file, you can pass parameter for the same from command line. This how you do it:
+mvn test -Dcucumber.options=”src/test/resources/functionalTests/End2End_Tests.feature”
+
+8 >> Its also possible to pass multiple options at once. This is how it can be done mvn test -Dcucumber.options=”SomeThing” -Dcucumber.options=”SomeThing” -Dcucumber.options=”SomeThing”
+mvn test -Dcucumber.options=”src/test/resources/functionalTests/End2End_Tests.feature” -Dcucumber.options=”–tags @Smoke”
+

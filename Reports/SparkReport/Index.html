@@ -1,0 +1,1015 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c952cc003431b643d7a73337421ff42b75bac784/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 13, 2021 06:59:32 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 13, 2021 06:59:32 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 13, 2021 07:07:21 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'><b>6</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='25%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='93%'><b>29</b> steps passed</small></div>
+<div>
+<small data-tooltip='6%'><b>2</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment":467.963
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@TC01-08</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC01-01</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC01-03</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC01-05</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC01-07</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC01-04</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC01-02</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC01-06</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>build</td>
+<td>3.4</td>
+</tr>
+<tr>
+<td>user</td>
+<td>Kailash</td>
+</tr>
+<tr>
+<td>AppName</td>
+<td>CREST_ERP</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows10</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 6,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 29,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@TC01-08</a><a class="dropdown-item" href="#">@TC01-01</a><a class="dropdown-item" href="#">@TC01-03</a><a class="dropdown-item" href="#">@TC01-05</a><a class="dropdown-item" href="#">@TC01-07</a><a class="dropdown-item" href="#">@TC01-04</a><a class="dropdown-item" href="#">@TC01-02</a><a class="dropdown-item" href="#">@TC01-06</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment</p>
+            <p class="text-sm">
+              <span>18:59:33 PM</span> / <span>00:07:47:963</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment</h5>
+<span class='badge badge-success'>07.13.2021 18:59:33</span>
+<span class='badge badge-danger'>07.13.2021 19:07:21</span>
+<span class='badge badge-default'>00:07:47:963</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Create PO - TC01</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.launch_the_Application()">
+                <span>Given Launch the Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.login_with_valid_Credentials()">
+                <span>Then Login with valid Credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.create_PO_TC_One()">
+                <span>Given Create PO - TC_One</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.add_Shipping_Details_TC_One()">
+                <span>Then Add Shipping Details - TC_One</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.add_Order_Items_TC_One()">
+                <span>Then Add Order Items - TC_One</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.review_Create_PO_TC_One()">
+                <span>Then Review & Create PO - TC_One</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.validating_SubTotal_Tax_GrandTotal_TaxConsolidated_Btn_TaxBreakup_Table_TC_One()">
+                <span>Then Validating SubTotal/Tax/GrandTotal/TaxConsolidated Btn/TaxBreakup Table  - TC_One</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>PO Approval - TC01</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.launch_the_Application()">
+                <span>Given Launch the Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.login_with_valid_Credentials()">
+                <span>Then Login with valid Credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.approve_PO_Single_level_Approval_TC_One()">
+                <span>Given Approve PO (Single level Approval) - TC_One</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Receive Inventory - TC01</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.launch_the_Application()">
+                <span>Given Launch the Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.login_with_valid_Credentials()">
+                <span>Then Login with valid Credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.receive_Inventory_Single_Shipment_TC_One()">
+                <span>Given Receive Inventory (Single Shipment) - TC_One</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="24"><span class="badge log fail-bg mr-2">Fail</span>Invoice Posting - TC01</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.launch_the_Application()">
+                <span>Given Launch the Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.login_with_valid_Credentials()">
+                <span>Then Login with valid Credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.invoice_Posting_Single_Invoice_TC_One()">
+                <span>Given Invoice Posting (Single Invoice) - TC_One</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition_files.TC01_Stepdef.validating_SubTotal_Tax_GrandTotal_for_all_the_Generated_Invoices_TC_One()">
+                <span>Then Validating SubTotal/Tax/GrandTotal for all the Generated Invoices - TC_One</span>
+      <div>
+        <textarea disabled class="code-block">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<"?660114.8[9]"> but was:<"?660114.8[7]">
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:100)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:42)
+	at com.AccountsPayable_Modules.AP_PurchaseInvoices_Overview.PI_View_softAssert(AP_PurchaseInvoices_Overview.java:598)
+	at stepdefinition_files.TC01_Stepdef.validating_SubTotal_Tax_GrandTotal_for_all_the_Generated_Invoices_TC_One(TC01_Stepdef.java:96)
+	at ?.Validating SubTotal/Tax/GrandTotal for all the Generated Invoices - TC_One(file:///D:/Projects/Cucumber_POM_CREST_ERP/src/test/resources/Procurement_flow_feature_files/TC01.feature:32)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepdefinition_files.Crest_Login_Stepdef.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Invoice_Posting_-_TC01
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Payments - TC01</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.launch_the_Application()">
+                <span>Given Launch the Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.login_with_valid_Credentials()">
+                <span>Then Login with valid Credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.payments_Single_Payment_TC_One()">
+                <span>Given Payments (Single Payment) - TC_One</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>Transactions Validations under Finance Module with Shipment ID- TC01</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.launch_the_Application()">
+                <span>Given Launch the Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.login_with_valid_Credentials()">
+                <span>Then Login with valid Credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.validate_Accounting_transactions_with_ShipmentID_under_Finance_Module_TC_One()">
+                <span>Given Validate Accounting transactions with ShipmentID under Finance Module - TC_One</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>Transactions Validations under Finance Module with Invoice ID- TC01</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.launch_the_Application()">
+                <span>Given Launch the Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.login_with_valid_Credentials()">
+                <span>Then Login with valid Credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.TC01_Stepdef.validate_Accounting_transactions_with_InvoiceID_under_Finance_Module_TC_One()">
+                <span>Given Validate Accounting transactions with InvoiceID under Finance Module - TC_One</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="49"><span class="badge log fail-bg mr-2">Fail</span>Transactions Validations under Finance Module with Payment ID- TC01</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.launch_the_Application()">
+                <span>Given Launch the Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition_files.Crest_Login_Stepdef.login_with_valid_Credentials()">
+                <span>Then Login with valid Credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition_files.TC01_Stepdef.validate_Accounting_transactions_with_PaymentID_under_Finance_Module_TC_One()">
+                <span>Given Validate Accounting transactions with PaymentID under Finance Module - TC_One</span>
+      <div>
+        <textarea disabled class="code-block">org.assertj.core.api.SoftAssertionError: 
+The following 2 assertions failed:
+1) expected:<"?660114.8[9]"> but was:<"?660114.8[7]">
+2) expected:<"?660114.8[9]"> but was:<"?660114.8[7]">
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:100)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:42)
+	at com.Financials_Modules.Financials_AcctTransaction_GLTransactionViewEntry.AcctTrans_PaymentID_softAssert(Financials_AcctTransaction_GLTransactionViewEntry.java:450)
+	at stepdefinition_files.TC01_Stepdef.validate_Accounting_transactions_with_PaymentID_under_Finance_Module_TC_One(TC01_Stepdef.java:133)
+	at ?.Validate Accounting transactions with PaymentID under Finance Module - TC_One(file:///D:/Projects/Cucumber_POM_CREST_ERP/src/test/resources/Procurement_flow_feature_files/TC01.feature:52)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepdefinition_files.Crest_Login_Stepdef.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Transactions_Validations_under_Finance_Module_with_Payment_ID-_TC01
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">8</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC01-08</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC01-08</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:06:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='49'>Transactions Validations under Finance Module with Payment ID- TC01</a>
+<div class="">
+<span class="badge badge-default">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment.Transactions Validations under Finance Module with Payment ID- TC01</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC01-01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC01-01</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Create PO - TC01</a>
+<div class="">
+<span class="badge badge-default">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment.Create PO - TC01</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC01-03</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC01-03</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:01:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Receive Inventory - TC01</a>
+<div class="">
+<span class="badge badge-default">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment.Receive Inventory - TC01</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC01-05</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC01-05</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:03:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='31'>Payments - TC01</a>
+<div class="">
+<span class="badge badge-default">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment.Payments - TC01</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC01-07</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC01-07</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>Transactions Validations under Finance Module with Invoice ID- TC01</a>
+<div class="">
+<span class="badge badge-default">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment.Transactions Validations under Finance Module with Invoice ID- TC01</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC01-04</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC01-04</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:02:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Invoice Posting - TC01</a>
+<div class="">
+<span class="badge badge-default">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment.Invoice Posting - TC01</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC01-02</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC01-02</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:00:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>PO Approval - TC01</a>
+<div class="">
+<span class="badge badge-default">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment.PO Approval - TC01</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC01-06</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC01-06</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='37'>Transactions Validations under Finance Module with Shipment ID- TC01</a>
+<div class="">
+<span class="badge badge-default">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment.Transactions Validations under Finance Module with Shipment ID- TC01</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.assertj.core.api.SoftAssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.assertj.core.api.SoftAssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:03:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Then Validating SubTotal/Tax/GrandTotal for all the Generated Invoices - TC_One</a>
+<div class="">
+<span class="badge badge-default">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment.Invoice Posting - TC01.Then Validating SubTotal/Tax/GrandTotal for all the Generated Invoices - TC_One</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:07:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>Given Validate Accounting transactions with PaymentID under Finance Module - TC_One</a>
+<div class="">
+<span class="badge badge-default">Crest Release - 3.4 - TC01 - Local Purchase Order (for Stock Items ) - Purchase Order with Single level approval , GST ( Intra ), Single Shipment, Supplier Invoice & Single Payment.Transactions Validations under Finance Module with Payment ID- TC01.Given Validate Accounting transactions with PaymentID under Finance Module - TC_One</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
